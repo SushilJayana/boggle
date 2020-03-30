@@ -15,8 +15,8 @@ class Boggle extends React.Component {
         this.state = {
             valid_word_list: [],
             unique_valid_word_list: [],
-            seconds: 59,
-            minutes: 2,
+            seconds: 5,
+            minutes: 0,
             isTimeOver: false
         }
         this.handleKeyUp = this.handleKeyUp.bind(this);
@@ -31,13 +31,17 @@ class Boggle extends React.Component {
     }
 
     onGameCompletion() {
-        document.getElementById("d_inp").innerHTML = '';
+        document.getElementById("in_word").value = "";
+        document.getElementById("message").value = "";
         this.setState({ isTimeOver: true })
     }
 
     handleKeyUp(event) {
 
         if (event.keyCode === 13) {
+
+            if (this.state.isTimeOver)
+                return false
 
             let word = ((event.target.value).replace(/\s+/g, '') !== "") ? (event.target.value).toUpperCase() : "";
 
@@ -100,16 +104,17 @@ class Boggle extends React.Component {
                                     <div id="d_inp">
                                         <input id="in_word" type="text" className="input" placeholder="Enter valid word" maxLength="16"
                                             onKeyUp={(event) => this.handleKeyUp(event)}
-                                            onKeyPress={this.handleKeyPress} />
+                                            onKeyPress={this.handleKeyPress}
+                                            disabled={this.state.isTimeOver ? 'disabled' : ''} />
                                         &nbsp;&nbsp;<span id="message"></span>
-                                    </div>
-                                    {this.state.isTimeOver ? <Button variant="success" onClick={() => { window.location.reload() }}>Play Again</Button> : ''}
+                                        {this.state.isTimeOver ? <Button variant="success" onClick={() => { window.location.reload() }}>Play Again</Button> : ''}
+                                    </div><br />
+
                                 </Col>
                                 <Col md={4} sm={5}>
                                     <Timer seconds={this.state.seconds} minutes={this.state.minutes} />
                                 </Col>
                             </Row>
-                            <br />
                             <Row>
                                 <Col md={12}>
                                     <ValidWordList valid_word_list={this.state.valid_word_list} />

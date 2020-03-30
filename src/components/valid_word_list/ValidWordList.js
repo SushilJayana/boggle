@@ -14,6 +14,7 @@ export default class ValidWordList extends React.Component {
         }
 
         return (
+            
             <div>
                 <table className="vwl_table_hd">
                     <thead>

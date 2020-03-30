@@ -41,3 +41,7 @@
   .phc_effect::-ms-input-placeholder { /* Microsoft Edge */
     color: #2196F3;
   }
+
+  .v_list{
+    margin-top: 10px;
+  }
