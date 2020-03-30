@@ -1,0 +1,42 @@
+
+#vwl_section{
+    width: 100%;
+    height: 210px;
+    overflow: scroll;
+    overflow-x: hidden;
+    /* margin: 20px 0; */
+    border: 1px solid #E7E7E7;
+  }
+  
+  
+  .vwl_table_hd{
+    width: 97%;
+      border-collapse: collapse;
+      color: #2196F3;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+  }
+  .vwl_table_hd th {
+    background: #2196F3;
+    /* border: 1px solid #2196F3; */
+    color: white;
+    padding: 2px 5px;
+    text-align: center; 
+    width: 33%;
+  }
+  
+  
+  .vwl_table{
+      width: 100%;
+      border-collapse: collapse;
+      color: #2196F3;
+      font-size: 14px;
+      text-align: center;
+  }
+  
+  .vwl_table tr td{
+     /* border: 1px solid #2196F3; */
+     width : 33%;
+  }
+  

@@ -1,0 +1,43 @@
+ 
+  #message{
+    color :red;
+    font-size: 13px;
+  }
+  
+  .board-section{
+    padding-bottom: 15px;
+  }
+  
+  .interact-section{
+    background: #f7f7f7;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    height: 368px;
+  }
+  
+  .score-section{
+    margin-top: 10px;
+    background: #D3EAFD;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    border-radius: 25px;
+  }
+  
+  #wrapper{
+    margin-top: 10px;
+  }
+
+
+  .phc_effect::placeholder {
+    color: #2196F3;
+    opacity: 1; /* Firefox */
+  }
+  
+  .phc_effect:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #2196F3;
+  }
+  
+  .phc_effect::-ms-input-placeholder { /* Microsoft Edge */
+    color: #2196F3;
+  }
