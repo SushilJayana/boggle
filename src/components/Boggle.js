@@ -15,8 +15,8 @@ class Boggle extends React.Component {
         this.state = {
             valid_word_list: [],
             unique_valid_word_list: [],
-            seconds: 20,
-            minutes: 0,
+            seconds: 59,
+            minutes: 1,
             isTimeOver: false
         }
         this.handleKeyUp = this.handleKeyUp.bind(this);
