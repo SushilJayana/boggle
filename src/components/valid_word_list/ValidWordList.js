@@ -9,7 +9,7 @@ export default class ValidWordList extends React.Component {
         if (this.props.valid_word_list && (this.props.valid_word_list).length > 0) {
 
             word_view_list = this.props.valid_word_list.map((value, key) => {
-                return <tr key={key}><td>{value.word}</td><td>{value.length}</td><td>{value.score}</td></tr>
+                return <tr key={key}><td>{value.word}</td><td>{value.length}</td><td>{value.point}</td></tr>
             });
         }
 
