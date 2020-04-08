@@ -1,3 +1,13 @@
+TECHNOLOGIES:
+1. Nodejs/NPM (https://nodejs.org/en/download/)
+
+SETUP:
+1. Open command line/terminal, go to project folder and use commands
+    - To install required packages
+        - npm install
+    - To run the project
+        - npm start
+
 NOTE:
 1. For test purpose, initially it shows only 2 word matrix puzzle returned from ROR backend api
 2. Checks in the puzzle if word exists and validates if it is correctly choosen by not overlapping the same characters again
@@ -10,3 +20,4 @@ NOTE:
     - Must be 3 or more char , if input is less than 3 chars
     - Already added, if you want to add same valid (puzzle + dictionary api) again
 5. Error messages : Message varies on response by ROR backend api.
+6. Backend API link info location => src/reducers/red_api.js

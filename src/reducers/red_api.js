@@ -1,8 +1,8 @@
 let initialData = {
     api_list: {
-        getMatrixData: 'http://localhost:3000/api/v1/word_matrices/getMatrixData',
-        findValidWordsFromMatrixData: 'http://localhost:3000/api/v1/boggle/findValidWordsFromMatrixData',
-        getPuzzleStats: 'http://localhost:3000/api/v1/matrix_valid_words/getPuzzleStats'
+        getMatrixData: 'http://localhost:3002/api/v1/word_matrices/getMatrixData',
+        findValidWordsFromMatrixData: 'http://localhost:3002/api/v1/boggle/findValidWordsFromMatrixData',
+        getPuzzleStats: 'http://localhost:3002/api/v1/matrix_valid_words/getPuzzleStats'
     }
 }
 

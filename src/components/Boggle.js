@@ -15,7 +15,7 @@ class Boggle extends React.Component {
         this.state = {
             valid_word_list: [],
             unique_valid_word_list: [],
-            seconds: 20 ,
+            seconds: 20,
             minutes: 0,
             isTimeOver: false
         }
@@ -31,8 +31,8 @@ class Boggle extends React.Component {
     }
 
     onGameCompletion() {
-        document.getElementById("in_word").value = "";
-        document.getElementById("message").value = "";
+        document.getElementById("in_word").style.display = "none";
+        document.getElementById("message").style.display = "none";
         this.setState({ isTimeOver: true })
     }
 
