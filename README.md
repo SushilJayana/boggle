@@ -1,6 +1,6 @@
 NOTE:
-1. For test purpose, initially it shows only 2 word matrix puzzle return from ror backend api
-2. Checks in the puzzles and validates if it is correctly choosen by not overlapping the same characters again
+1. For test purpose, initially it shows only 2 word matrix puzzle returned from ROR backend api
+2. Checks in the puzzle if word exists and validates if it is correctly choosen by not overlapping the same characters again
 3. Then if validates, checks the found word in dictionary API (used Yandex dictionary api)
     - for some past tense,and plural words were not found in Yandex
 4. Warning messages :
