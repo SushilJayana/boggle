@@ -1,8 +1,13 @@
 let initialData = {
+    // api_list: {
+    //     getMatrixData: 'http://localhost:3002/api/v1/word_matrices/getMatrixData',
+    //     findValidWordsFromMatrixData: 'http://localhost:3002/api/v1/boggle/findValidWordsFromMatrixData',
+    //     getPuzzleStats: 'http://localhost:3002/api/v1/matrix_valid_words/getPuzzleStats'
+    // }
     api_list: {
-        getMatrixData: 'http://localhost:3002/api/v1/word_matrices/getMatrixData',
-        findValidWordsFromMatrixData: 'http://localhost:3002/api/v1/boggle/findValidWordsFromMatrixData',
-        getPuzzleStats: 'http://localhost:3002/api/v1/matrix_valid_words/getPuzzleStats'
+        getMatrixData: 'https://api-boggle.herokuapp.com/api/v1/word_matrices/getMatrixData',
+        findValidWordsFromMatrixData: 'https://api-boggle.herokuapp.com/api/v1/boggle/findValidWordsFromMatrixData',
+        getPuzzleStats: 'https://api-boggle.herokuapp.com/api/v1/matrix_valid_words/getPuzzleStats'
     }
 }
 
